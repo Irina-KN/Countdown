@@ -95,19 +95,17 @@ function Timer() {
 Timer();
 
 let countClickTree = 1;
-document
-  .querySelector(".containerImageTree img")
-  .addEventListener("click", () => {
-    countClickTree += 1;
-    if (countClickTree % 2 === 0) {
-      document.querySelector("#claus").style.opacity = 1;
-      document.querySelector("#claus").style.left = "2000px";
-    } else {
-      document.querySelector("#claus").style.opacity = 1;
-      document.querySelector("#claus").style.opacity = 1;
-      document.querySelector("#claus").style.left = "-2000px";
-    }
-  });
+document.querySelector(".containerImageTree ").addEventListener("click", () => {
+  countClickTree += 1;
+  if (countClickTree % 2 === 0) {
+    document.querySelector("#claus").style.opacity = 1;
+    document.querySelector("#claus").style.left = "2000px";
+  } else {
+    document.querySelector("#claus").style.opacity = 1;
+    document.querySelector("#claus").style.opacity = 1;
+    document.querySelector("#claus").style.left = "-2000px";
+  }
+});
 document
   .querySelector("#presents1EasterChicken")
   .addEventListener("click", () => {
